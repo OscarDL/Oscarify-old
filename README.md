@@ -1,7 +1,9 @@
 # Oscarify
 A Spotify clone, made in a month, while learning React.
 
-**Unfinished - WIP**
+**Runs at: https://oscarifun.web.app**
+
+### Unfinished - WIP
 
 ### To do:
 - Context menu
