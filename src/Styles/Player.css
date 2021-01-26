@@ -1,0 +1,20 @@
+.player {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - calc(5.6rem + 1px)); /* 1px footer border */
+}
+
+.player > * {
+  color: #eee;
+}
+
+.player__body {
+  width: 100vw;
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  background-color: #121212;
+}

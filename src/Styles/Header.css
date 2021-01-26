@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header > * {
+  z-index: 1;
+  align-items: center;
+}
+
+.header__controls {
+  justify-content: space-between;
+  display: flex;
+  width: 80px;
+}
+
+.header__back, .header__forward {
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  opacity: 0.8;
+  height: 32px;
+  width: 32px;
+}
+.header__back > svg { display: block; margin: auto; padding-right: 2px; }
+.header__forward > svg { display: block; margin: auto; padding-left: 2px; }
+
+.header__profile {
+  background-color: rgba(0,0,0,0.7);
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 50px;
+  padding: 2px 2px;
+  display: flex;
+}
+.header__profile:hover {
+  background-color: rgba(25,25,25,0.7);
+  cursor: pointer;
+}
+
+.header__profile > span {
+  justify-content: center;
+  text-overflow: ellipsis;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0 4px 0 8px;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  font-weight: 700;
+  overflow: hidden;
+  font-size: 14px;
+  display: flex;
+}
+.header__profile > div {
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4px 0 0;
+  display: flex;
+}
+
+.header__profile > img { width: 28px; height: 28px; border-radius: 50%; }
+.header__profile > svg { background-color: #333333; border-radius: 50%; padding: 4px; }
+
+.header > .header__library {
+  height: 32px;
+  flex-grow: 1;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+}
+.header > .header__library > span {
+  height: 32px;
+  display: table;
+  padding: 2px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+.header > .header__library > span:hover > a { color: #1db954; }
+.header > .header__library > span > a {
+  opacity: 1;
+  height: 32px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.15s;
+  display: table-cell;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.header > .header__search {
+  height: 32px;
+  flex-grow: 1;
+  display: flex;
+}
+.header > .header__search > div {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  margin: 0 16px;
+  flex: 0 1 364px;
+  align-items: center;
+}
+.header > .header__search > div > div {
+  z-index: 2;
+  margin-right: -36px;
+}
+.header > .header__search > div > div > svg {
+  color: black;
+  margin: 3px 0 0 12px;
+}
+.header > .header__search > div > input {
+  outline: 0;
+  height: 100%;
+  border: none;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 2px 48px 0;
+  text-overflow: ellipsis;
+  width: calc(100% - 96px);
+}

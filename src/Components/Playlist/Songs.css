@@ -1,0 +1,113 @@
+.playlist__songs {
+  padding-bottom: 40px;
+}
+
+.playlist__songs__header {
+  opacity: 0.75;
+  display: grid;
+  grid-gap: 0 16px;
+  margin-bottom: -5px;
+  padding: 32px 18px 0;
+  text-transform: uppercase;
+  grid-template-columns: 16px 6fr 4fr 3fr minmax(120px,1fr);
+}
+.playlist__songs__header > span:not(:first-child) {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transform: scale(1, 0.92);
+}
+.playlist__songs__header > span:first-child {
+  display: flex;
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 2px;
+  justify-content: flex-end;
+}
+.playlist__songs__header > span:last-child {
+  text-align: right;
+  margin-right: 32px;
+}
+
+.playlist__songs > hr {
+  height: 1px;
+  border: none;
+  opacity: 0.1;
+  margin: 9px 0 16px;
+  background-color: white;
+}
+
+.playlist__songs__tracks {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.playlist__songs__track {
+  display: grid;
+  grid-gap: 0 16px;
+  padding: 8px 18px;
+  transition: 0.15s;
+  border-radius: 4px;
+  align-items: center;
+  grid-template-columns: 16px 6fr 4fr 3fr minmax(120px,1fr);
+}
+.playlist__songs__track:hover {
+  background-color: hsla(0,0%,100%,.1);
+}
+
+.playlist__songs__track__count {
+  display: flex;
+  margin-right: 4px;
+  text-align: right;
+  justify-content: flex-end;
+}
+.playlist__songs__track__title {
+  display: flex;
+  align-items: center;
+}
+.playlist__songs__track__title > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 1px;
+}
+.playlist__songs__track__title > span {
+  display: flex;
+  font-weight: 500;
+  margin-bottom: -1px;
+  flex-direction: column;
+}
+.playlist__songs__track__title > span > span:last-child > span > a, .playlist__songs__track__album > a { color: white; text-decoration: none; }
+.playlist__songs__track__title > span > span:last-child > span > a:hover, .playlist__songs__track__album > a:hover { text-decoration: underline; }
+
+
+.playlist__songs__track__count, .playlist__songs__track__title > span > span:last-child, .playlist__songs__track__album, .playlist__songs__track__added, .playlist__songs__track__duration > span {
+  opacity: 0.75;
+  font-size: 14px;
+  font-weight: 400;
+}
+.playlist__songs__track__duration {
+  display: flex;
+  margin-right: 34px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.playlist__songs__track__duration > span {
+  font-size: 16px;
+  text-align: right;
+}
+.playlist__songs__track__duration > svg {
+  transition: 0.2s;
+  margin: 2px 20px 0 0;
+}
+.playlist__songs__track__duration > svg:hover {
+  color: #ff3333;
+  margin: 2px 20px 0 0;
+}
+
+.playlist__songs__track__title > span > span, .playlist__songs__track__album, .playlist__songs__track__added {
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow: hidden;
+}

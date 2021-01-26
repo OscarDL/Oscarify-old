@@ -1,0 +1,23 @@
+.likes__actions {
+  display: flex;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.likes__actions__play {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  transition: 0.2s;
+  border-radius: 56px;
+  background-color: #1db954;
+}
+.likes__actions__play:hover {
+  transform: scale(1.06);
+}
+
+.likes__actions__play > svg {
+  margin: auto;
+  display: block;
+  padding-left: 4px;
+}

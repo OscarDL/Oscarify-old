@@ -1,0 +1,64 @@
+.sidebar {
+  background-color:  black;
+  letter-spacing: 0.2px;
+  overflow-y: hidden;
+  min-width: 234px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__text {
+  margin-left: 15px;
+  opacity: 0.75;
+}
+
+.sidebar > hr {
+  background-color: #282828;
+  margin: 5px auto;
+  border: none;
+  height: 1px;
+  width: 80%;
+}
+
+.playlists__title {
+  letter-spacing: 1px;
+  margin-left: 24px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.playlists__svg {
+  flex-shrink: 0;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+}
+
+.sidebar > .all__playlists {
+  max-height: calc(100vh - 382px);
+  padding-left: 14px;
+  overflow-y: scroll;
+  position: sticky;
+}
+
+.sidebar > .all__playlists::-webkit-scrollbar { background-color: black; }
+
+.sidebar > .all__playlists > .sidebarOption {
+  font-weight: 400;
+  max-width: 180px;
+  height: 0.78rem;
+}
+.sidebar > .all__playlists > .sidebarOption > .sidebarOption__link {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.sidebar > .all__playlists > .sidebarOption:first-child { padding-top: 14px; }
+.sidebar > .all__playlists > .sidebarOption:last-child { padding-bottom: 20px; }

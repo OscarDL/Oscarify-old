@@ -1,0 +1,83 @@
+#setArtistBg {
+  z-index: 0;
+  opacity: 0.6;
+  height: 468px;
+  position: sticky;
+  width: calc(100% + 50px);
+  margin: -14px 0 -454px -32px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(20,20,20,0));
+}
+
+.artist__info > *, .artist__actions > * { z-index: 1; }
+
+.artist__info {
+  display: flex;
+  margin-top: 38px;
+}
+.artist__info > img {
+  width: 232px;
+  height: 232px;
+  margin-right: 24px;
+  border-radius: 232px;
+  box-shadow: 0 0 36px rgb(0 0 0 / 25%);
+}
+
+.artist__info__info {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
+  .artist__info__info > h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+    margin-bottom: 6px;
+    letter-spacing: -3px;
+  }
+}
+@media (min-width: 1280px) {
+  .artist__info__info > h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 90px;
+    margin-bottom: 6px;
+    letter-spacing: -3px;
+  }
+}
+@media (min-width: 1368px) {
+  .artist__info__info > h1 {
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 110px;
+    margin-bottom: 6px;
+    letter-spacing: -3px;
+  }
+}
+
+.artist__info__info > h6 > svg { margin-right: 6px; }
+.artist__info__info > h6 {
+  display: flex;
+  color: #ddd;
+  font-size: 15px;
+  font-weight: 600;
+  align-items: center;
+  transform: scale(1, 0.92);
+}
+
+.artist__info__info > p { margin: 3px 0; }
+.artist__info__info > p > span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d0d0d0;
+}
+.artist__info__info > p > a, .artist__info__info > p > span > a {
+  opacity: 1;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.artist__info__info > p > a:hover, .artist__info__info > p > span > a:hover { text-decoration: underline; }

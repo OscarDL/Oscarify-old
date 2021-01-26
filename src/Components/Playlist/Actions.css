@@ -1,0 +1,35 @@
+.playlist__actions {
+  display: flex;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.playlist__actions > div { margin-right: 26px; }
+.playlist__actions > div:first-child { margin-right: 32px; }
+
+.playlist__actions__play {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  transition: 0.2s;
+  border-radius: 56px;
+  background-color: #1db954;
+}
+.playlist__actions__play:hover {
+  transform: scale(1.06);
+}
+
+.playlist__actions__play > svg {
+  margin: auto;
+  display: block;
+  padding-left: 4px;
+}
+
+.playlist__actions__like { padding-top: 2px; }
+.playlist__actions__like__like { opacity: 0.7; transition: 0.2s; }
+.playlist__actions__like__like:hover { opacity: 1; }
+.playlist__actions__like__unlike { fill: #1db954; transition: 0.2s; }
+.playlist__actions__like__unlike:hover { fill: #ff3333; }
+
+.playlist__actions__more > svg { opacity: 0.7; transition: 0.2s; }
+.playlist__actions__more > svg:hover { opacity: 1; }

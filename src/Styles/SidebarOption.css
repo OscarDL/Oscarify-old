@@ -1,0 +1,68 @@
+.sidebarOption {
+  height: 22px;
+  opacity: 0.75;
+  margin: 0 8px;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.15s;
+  padding: 10px 2px;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebarOption > .sidebarOption__link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebarOption:hover {
+  opacity: 1 !important;
+}
+
+.sidebarOption__link {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebarOption__icon {
+  padding: 0 14px;
+}
+
+#create__playlist {
+  padding: 16px 24px 5px 24px;
+}
+#liked__songs {
+  padding: 5px 24px 8px 24px;
+}
+
+#create__playlist, #liked__songs {
+  background: transparent;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+  transition: 0.15s;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  outline: 0;
+}
+
+#create__playlist:hover > .sidebar__text, #liked__songs:hover > .sidebar__text, #create__playlist:hover > svg, #liked__songs:hover > svg {
+  opacity: 1;
+}
+
+#create__playlist > svg {
+  background: white;
+  transition: 0.15s;
+  opacity: 0.75;
+  fill: #000;
+}
+
+#liked__songs > svg {
+  background: linear-gradient(135deg,#450af5,#c4efd9);
+  transition: 0.15s;
+  opacity: 0.75;
+}

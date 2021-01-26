@@ -1,0 +1,8 @@
+.home {
+  padding-top: 26px;
+  display: grid;
+}
+
+.home > div > h2 {
+  font-size: 22px;
+}

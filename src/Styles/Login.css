@@ -1,0 +1,49 @@
+.login {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #121212;
+}
+
+.login > img {
+  width: 40vw;
+}
+
+.login > a {
+  outline: 0;
+  border: none;
+  color: #eee;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+  padding: 12px 24px;
+  border-radius: 3px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1db954cc;
+}
+
+.login > a:hover {
+  cursor: pointer;
+  background-color: #1db95499;
+}
+
+.login {
+  overflow: hidden;
+}
+.login > img {
+  animation: showLogin 0.5s ease-in-out 1 forwards;
+}
+.login > a {
+  animation: showLoginB 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes showLogin {
+  0% {transform: translateY(-500px);}
+  100% {transform: translateY(0);}
+}
+@keyframes showLoginB {
+  0% {transform: translateY(500px);}
+  100% {transform: translateY(0);}
+}
