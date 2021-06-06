@@ -23,37 +23,37 @@
 }
 
 .user__info__info {
-  display: flex;
+  display: grid;
   color: white;
+  align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.user__info__info > h1 {
+  font-weight: 700;
+  overflow: hidden;
+  letter-spacing:-3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 992px) {
   .user__info__info > h1 {
     font-size: 48px;
-    font-weight: 700;
-    line-height: 66px;
-    margin-bottom: 6px;
-    letter-spacing: -3px;
+    line-height: 87px;
   }
 }
 @media (min-width: 1280px) {
   .user__info__info > h1 {
     font-size: 72px;
-    font-weight: 700;
-    line-height: 90px;
-    margin-bottom: 6px;
-    letter-spacing: -3px;
+    line-height: 101px;
   }
 }
 @media (min-width: 1368px) {
   .user__info__info > h1 {
     font-size: 92px;
-    font-weight: 700;
-    line-height: 110px;
-    margin-bottom: 6px;
-    letter-spacing: -3px;
+    line-height: 121px;
   }
 }
 

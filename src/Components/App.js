@@ -3,7 +3,7 @@ import SpotifyWebApi from 'spotify-web-api-js';
 
 import Login from './Login';
 import Player from './Player';
-import { getTokenFromUrl } from '../spotify';
+import { loginUrl, getTokenFromUrl } from '../spotify';
 import { useDataLayerValue } from '../Context/DataLayer';
 
 import '../Styles/App.css';
@@ -134,7 +134,7 @@ function App() {
 
         dispatchMainInfo();
 
-      }
+      } else window.location.href = loginUrl;
 
     }
 

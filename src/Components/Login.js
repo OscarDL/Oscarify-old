@@ -9,7 +9,7 @@ function Login() {
   return (
     <div className="login">
       <img src={logo} alt="Spotify Logo"></img>
-      <a href={loginUrl}/*'http://oscarifun-backend.web.app/login'*/>Sign in with Spotify</a>
+      <a href={loginUrl}>Sign in with Spotify</a>
     </div>
   );
 }

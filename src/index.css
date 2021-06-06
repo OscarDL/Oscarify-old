@@ -21,3 +21,11 @@ code {
 ::-webkit-scrollbar { background: rgba(0, 0, 0, 0); width: 16px; }
 ::-webkit-scrollbar-thumb:hover { box-shadow: inset 0 0 16px 16px rgba(150, 150, 150, 0.66); }
 ::-webkit-scrollbar-thumb { box-shadow: inset 0 0 16px 16px rgba(100, 100, 100, 0.66); border: solid 2px transparent; }
+
+
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #eee;
+  }
+}
