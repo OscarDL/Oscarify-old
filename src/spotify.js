@@ -31,9 +31,7 @@ const scopes = [
 export const getTokenFromUrl = () => querystring.parse(window.location.hash.substring(1));
 
 export const loginUrl = 'https://accounts.spotify.com/authorize?' +
-  querystring.stringify({
-    response_type: 'token',
-    client_id: clientId,
-    scope: scopes.join('%20'),
-    redirect_uri : redirectUri
-  });
+  'client_id=' + clientId
+  + '&response_type=token'
+  + '&scope=' + scopes.join('%20')
+  + '&redirect_uri=' + redirectUri;
